@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html lang="es_ES">
+    <head>
+    	<meta charset="UTF-8">
+        <title>Artículos</title>
+        <link rel="stylesheet" href="..\css\prueba.css">
+        <script src="..\js\javascriptcarlos.js"></script>
+    </head>
+<body>
+  <div> <h1>Registro de Vehiculos</h1></div>
+  <div>
+	<form>
+		<p>Marca:
+            <select id="marca" name="marca" style="width:150px">
+                <option id="Ford">Ford</option>
+                <option id="Renault">Renault</option>
+                <option id="Mercedes">Mercedes</option>
+                <option id="BMW">BMW</option>
+                <option id="Citroen">Citroen</option>
+            </select>           
+ 	<p>modelo:
+        <input id="modelo" style="margin:10px" type="text"></p>
+    <p>Precio:
+    	<input id="precio" style="margin:10px" type="number"></p>
+   <p>Descripción de coche:
+    	<input id="descripcion" style="margin:10px" type="text"></p>
+	<p>Fecha de Venta:
+        <input id="fechaventa" style="margin:10px" type="date"></p>
+        <input type="reset" value="LIMPIAR">
+</form>
+</div>
+&nbsp;
+<div>  <button id="btn_generaTabla" onclick="generaTabla()">AÑADIR</button></div>
+ <div>  <button id="btn_generaTabla" onclick="eliminar()">Eliminar</button> </div>
+<div>
+        <table >
+            <thead>
+                <tr>
+                    <th>Marca</th> &nbsp;
+                    <th>Modelo</th> &nbsp;
+                    <th>PRECIO</th> &nbsp;
+                    <th>DESCRIPCIÓN</th> &nbsp;
+                    <th>FECHA DE VENTA</th>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+            </tbody>
+        </table> 
+ </div>
+</body>
+</html>
+
+
